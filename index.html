@@ -735,12 +735,18 @@
 
   .shot {
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: 3rem 1fr;
     gap: 1.5rem;
-    align-items: baseline;
+    align-items: start;
     padding: 1.4rem 0;
     border-bottom: 1px solid rgba(250, 247, 242, 0.12);
     transition: background 0.3s ease, padding-left 0.3s ease;
+  }
+
+  .shot-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
   }
 
   .shot:hover {
@@ -753,7 +759,8 @@
     font-size: 0.7rem;
     letter-spacing: 0.2em;
     color: rgba(250, 247, 242, 0.4);
-    min-width: 2.5rem;
+    width: 100%;
+    text-align: center;
   }
 
   .shot-desc {
@@ -772,6 +779,7 @@
     padding: 0.3rem 0.6rem;
     border: 1px solid rgba(250, 247, 242, 0.2);
     white-space: nowrap;
+    align-self: flex-start;
   }
 
   /* ───── BRAND IDENTITY (colors + type) ───── */
@@ -1414,33 +1422,45 @@
     <div class="shots-table reveal-stagger">
       <div class="shot">
         <span class="shot-num">01</span>
-        <span class="shot-desc">A small Hong Kong cha chaan teng or noodle counter, alone, jewelry visible — milk tea in hand, phone face-down.</span>
-        <span class="shot-tag">Lifestyle</span>
+        <div class="shot-body">
+          <span class="shot-tag">Lifestyle</span>
+          <span class="shot-desc">A small Hong Kong cha chaan teng or noodle counter, alone, jewelry visible — milk tea in hand, phone face-down.</span>
+        </div>
       </div>
       <div class="shot">
         <span class="shot-num">02</span>
-        <span class="shot-desc">Hotel bed mid-afternoon, robe, laptop, room service tray. The ring is on, the day isn't dressed up.</span>
-        <span class="shot-tag">Lifestyle</span>
+        <div class="shot-body">
+          <span class="shot-tag">Lifestyle</span>
+          <span class="shot-desc">Hotel bed mid-afternoon, robe, laptop, room service tray. The ring is on, the day isn't dressed up.</span>
+        </div>
       </div>
       <div class="shot">
         <span class="shot-num">03</span>
-        <span class="shot-desc">Pre or post-workout: athleisure, water bottle, gym bag. Tennis bracelet at the wrist. Direct, unfussy.</span>
-        <span class="shot-tag">Hand Portrait</span>
+        <div class="shot-body">
+          <span class="shot-tag">Hand Portrait</span>
+          <span class="shot-desc">Pre or post-workout: athleisure, water bottle, gym bag. Tennis bracelet at the wrist. Direct, unfussy.</span>
+        </div>
       </div>
       <div class="shot">
         <span class="shot-num">04</span>
-        <span class="shot-desc">Walking into a building — the back of her, briefcase or tote, no face. Ring catches a passing reflection.</span>
-        <span class="shot-tag">Main Character</span>
+        <div class="shot-body">
+          <span class="shot-tag">Main Character</span>
+          <span class="shot-desc">Walking into a building — the back of her, briefcase or tote, no face. Ring catches a passing reflection.</span>
+        </div>
       </div>
       <div class="shot">
         <span class="shot-num">05</span>
-        <span class="shot-desc">On a plane — window light, a book, the neck pillow off. Studs and a stack on the wrist.</span>
-        <span class="shot-tag">Lifestyle</span>
+        <div class="shot-body">
+          <span class="shot-tag">Lifestyle</span>
+          <span class="shot-desc">On a plane — window light, a book, the neck pillow off. Studs and a stack on the wrist.</span>
+        </div>
       </div>
       <div class="shot">
         <span class="shot-num">06</span>
-        <span class="shot-desc">At a board meeting — half her face out of frame, attention on someone else. The hand on the table is the subject.</span>
-        <span class="shot-tag">Hand Portrait</span>
+        <div class="shot-body">
+          <span class="shot-tag">Hand Portrait</span>
+          <span class="shot-desc">At a board meeting — half her face out of frame, attention on someone else. The hand on the table is the subject.</span>
+        </div>
       </div>
     </div>
   </div>
